@@ -139,7 +139,7 @@ export default function ThemePreview() {
           Choose Your Color Scheme
         </h1>
         <p className="text-white/70 mb-8">
-          Select a theme below to preview. Click "Copy CSS" to get the code for globals.css
+          Select a theme below to preview. Click &ldquo;Copy CSS&rdquo; to get the code for globals.css
         </p>
 
         {/* Theme Grid */}
@@ -221,7 +221,7 @@ export default function ThemePreview() {
               background: `linear-gradient(to right, ${selectedTheme.colors.primary}, ${selectedTheme.colors.primaryLight})`,
             }}
           >
-            📋 Copy CSS for "{selectedTheme.name}"
+            📋 Copy CSS for &ldquo;{selectedTheme.name}&rdquo;
           </button>
           <p className="text-white/50 mt-4 text-sm">
             After copying, paste it in <code className="bg-white/10 px-2 py-1 rounded">src/app/globals.css</code> :root section

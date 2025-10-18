@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, CardFooter, Image, Button } from "@heroui/react";
+import { Card, Image, Button } from "@heroui/react";
 import { useState, useRef } from "react";
 
 const aiAgents = [
