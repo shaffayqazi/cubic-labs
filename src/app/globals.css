@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Cubic Labs Theme Colors - Modify these to change the entire site theme */
+  --primary: #00d4ff;           /* Cyan - Main brand color */
+  --primary-light: #4de4ff;     /* Light Cyan */
+  --primary-dark: #00a8cc;      /* Dark Cyan */
+  
+  --background: #030712;        /* Almost Black - Deep Dark */
+  --background-secondary: #0a0f1a; /* Very Dark Blue-Black */
+  --background-accent: #111827; /* Dark Charcoal */
+  
+  --foreground: #ffffff;        /* White text */
+  --foreground-muted: rgba(255, 255, 255, 0.7); /* Muted text */
+  --foreground-dim: rgba(255, 255, 255, 0.6);   /* Dim text */
+  
+  --border: rgba(0, 212, 255, 0.2);   /* Border color */
+  --border-hover: rgba(0, 212, 255, 0.4); /* Border hover */
 }
 
 @theme inline {
+  /* Background Colors */
   --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-background-accent: var(--background-accent);
+  
+  /* Foreground Colors */
   --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-foreground-dim: var(--foreground-dim);
+  
+  /* Primary Brand Colors */
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+  
+  /* Border Colors */
+  --color-border: var(--border);
+  --color-border-hover: var(--border-hover);
+  
+  /* Fonts */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
